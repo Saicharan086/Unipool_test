@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root{
+    height: 100%;
+    width: 100%;
+}
+
+.underline{position: relative;}
+.underline:before {
+  content: "";
+  position:relative;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  z-index:-10;
+  background-image: url('https://res.cloudinary.com/dztuxvl4l/image/upload/v1561346293/unitingline-anim_tje077_hdw2p5.svg');
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.underline:after {
+  content: "";
+  position:absolute;
+  width:100%;
+  height: 2.45em;
+  left: 0;
+  width: 100%;
+  z-index:-10;
+  background-image: url('https://res.cloudinary.com/dztuxvl4l/image/upload/v1561346293/unitingline-anim_tje077_hdw2p5.svg');
+  background-repeat: no-repeat;	
+  background-size: 100% 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
