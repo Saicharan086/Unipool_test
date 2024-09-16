@@ -8,7 +8,6 @@ export default function HeroSection(){
 
     return (
         <div className='flex gap-10'>
-
             <div className='mx-auto w-4/5 text-left flex flex-col'>
               <p className='text-8xl font-semibold mt-4  flex'>
                 <span className='text-yellow-500'>
