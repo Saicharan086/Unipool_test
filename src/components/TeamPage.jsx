@@ -61,6 +61,7 @@ const TeamPage = () => (
         <TeamMember key={member.name} {...member} />
       ))}
     </div>
+    <div className='mt-9 text-8xl font-extrabold text-yellow-300 flex justify-center'>All hail tiger</div>
   </div>
 );
 
