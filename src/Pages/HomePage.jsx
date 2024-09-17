@@ -1,13 +1,14 @@
-import { Navbar, BackgroundBoxesDemo, Footer, HeroSection } from '../components/components.js';
+import { Navbar, BackgroundBoxesDemo, Footer, HeroSection, FeatureSection } from '../components/components.js';
 
 
 
 export default function HomePage() {
   return (
-    <div className='h-full'>
+    <div className=''>
       <Navbar />
-      <div className='h-[85%] flex px-20 justify-between items-center '>
+      <div className='px-20 h-[85%]'>
         <HeroSection/>
+        <FeatureSection/>
       </div> 
       <Footer/>
     </div>
