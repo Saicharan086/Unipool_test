@@ -1,4 +1,5 @@
 import Logo_unipool from '../assets/Unipool_Logo.png'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar(){
 
@@ -10,10 +11,10 @@ export default function Navbar(){
                     <h1 className="font-bold text-3xl">Uni<span className="text-yellow-400">Pool</span></h1>
                 </div>
                 <ul className="flex gap-14 text-lg text-gray-600 ">
-                    <li>Home</li>
-                    <li>Contact Us</li>
-                    <li>About Us</li>
-                    <li>Services</li>
+                    <NavLink  to='/' className={({isActive}) => isActive ? "navbar-active" : ""}>Home</NavLink>
+                    <NavLink  to='/contact' className={({isActive}) => isActive ? "navbar-active" : ""}>Contact Us</NavLink>
+                    <NavLink  to='/about' className={({isActive}) => isActive ? "navbar-active" : ""}>About Us</NavLink>
+                    <NavLink  to='/services' className={({isActive}) => isActive ? "navbar-active" : ""}>Services</NavLink>
                 </ul>
             </div>
             <div className="">
