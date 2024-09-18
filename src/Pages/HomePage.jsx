@@ -1,4 +1,4 @@
-import { Navbar, BackgroundBoxesDemo, Footer, HeroSection, FeatureSection } from '../components/components.js';
+import { Navbar, BackgroundBoxesDemo, Footer, HeroSection, FeatureSection, ThirdSection } from '../components/components.js';
 
 
 
@@ -8,6 +8,7 @@ export default function HomePage() {
       <div className='px-20 h-[85%]'>
         <HeroSection/>
         <FeatureSection/>
+        <ThirdSection />
       </div> 
     </div>
   );
