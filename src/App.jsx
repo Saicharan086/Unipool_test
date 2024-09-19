@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { useState, Suspense, useEffect } from 'react'
 import { HomePage } from './Pages/pages'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { div } from 'framer-motion/client'
-import { Navbar, Footer} from './components/components';
+import { Navbar, Footer, Loader} from './components/components';
+
 
 const router = createBrowserRouter([
   {
@@ -37,11 +36,27 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000) 
+
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <div>
-      <RouterProvider router={router} />
+      {
+        isLoading ? 
+          (<Loader/>) 
+          : 
+          (<Suspense fallback={<Loader/>}>
+            <RouterProvider router={router} />
+          </Suspense>)
+      }
     </div>
   )
 }

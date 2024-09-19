@@ -5,6 +5,7 @@ import HeroSection from './HeroSection';
 import FeatureSection from './FeatureSection';
 import Cards from './Cards';
 import ThirdSection from './ThirdSection';
+import Loader from './Loader';
 
 export {
     Navbar,
@@ -14,4 +15,5 @@ export {
     FeatureSection,
     ThirdSection,
     Cards,
+    Loader
 }
