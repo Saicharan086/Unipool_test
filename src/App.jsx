@@ -1,5 +1,5 @@
 import { useState, Suspense, useEffect } from 'react'
-import { HomePage } from './Pages/pages'
+import { HomePage, AboutUsPage, ContactUsPage, ServicesPage } from './Pages/pages'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Navbar, Footer, Loader} from './components/components';
 
@@ -16,20 +16,20 @@ const router = createBrowserRouter([
   {
     path : '/about',
     element : <div><Navbar/>
-    About Us
+    <AboutUsPage/>
     <Footer/></div>,
   },
   {
     path : '/contact',
     element : <div><Navbar/>
-    Contact US
+    <ContactUsPage/>
     <Footer/>
     </div>,
   },
   {
     path : '/services',
     element : <div><Navbar/>
-    Services
+    <ServicesPage/>
     <Footer/>
     </div>
   }
