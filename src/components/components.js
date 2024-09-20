@@ -6,6 +6,7 @@ import FeatureSection from './FeatureSection';
 import Cards from './Cards';
 import ThirdSection from './ThirdSection';
 import Loader from './Loader';
+import Testimonials from './Testimonials';
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     FeatureSection,
     ThirdSection,
     Cards,
-    Loader
+    Loader,
+    Testimonials
 }
