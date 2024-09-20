@@ -17,8 +17,16 @@ export default function Navbar(){
                     <NavLink  to='/services' className={({isActive}) => isActive ? "navbar-active" : ""}>Services</NavLink>
                 </ul>
             </div>
-            <div className="">
-                <button className="bg-yellow-400 hover:bg-yellow-500 px-4 py-3 rounded-3xl font-semibold">Download the App</button>
+            <div className="flex gap-3 items-center">
+                <button>
+                    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/50/instagram-new--v1.png" className='hover:scale-125' alt="instagram-new"/>
+                </button>
+                <button>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" className='hover:scale-125' alt="facebook"/>
+                </button>
+                <button>
+                    <img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/50/linkedin.png" alt="linkedin" className='hover:scale-125' />
+                </button>
             </div>
         </nav>
     )
