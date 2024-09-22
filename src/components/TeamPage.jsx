@@ -42,7 +42,7 @@ const teamMembers = [
 
 const TeamMember = ({ img, name, role }) => (
   <div className="flex flex-col items-center text-center space-y-2">
-    <img className="rounded-full h-24 w-24 " src={img} alt={`${name}`} />
+    <img className="hover:scale-110 ease-in duration-200 rounded-full h-24 w-24 " src={img} alt={`${name}`} />
     <h3 className="text-lg font-medium">{name}</h3>
     <p className="text-sm text-gray-600">{role}</p>
   </div>
@@ -61,7 +61,6 @@ const TeamPage = () => (
         <TeamMember key={member.name} {...member} />
       ))}
     </div>
-    <div className='mt-9 text-8xl font-extrabold text-yellow-300 flex justify-center'>All hail tiger</div>
   </div>
 );
 

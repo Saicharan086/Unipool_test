@@ -4,6 +4,8 @@ import Footer from "./Footer"
 import HeroSection from './HeroSection';
 import TeamPage from './TeamPage';
 import About from './About'
+import OurMission from './OurMission'
+import Values from './Values';
 
 export {
     Navbar,
@@ -11,5 +13,7 @@ export {
     Footer,
     HeroSection,
     TeamPage,
-    About
+    About,
+    OurMission,
+    Values
 }

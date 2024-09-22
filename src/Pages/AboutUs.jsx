@@ -1,12 +1,17 @@
-import { About, Footer, Navbar } from "../components/components";
-import TeamPage from "../components/TeamPage";
+import { About, Footer, Navbar, OurMission, TeamPage, Values } from "../components/components";
 
 function AboutUs() {
   return (
-    <div className="selection:bg-yellow-300 selection:text-zinc-50">
-        <Navbar/>
+    <div>
+      <Navbar/>
       <div className="min-h-screen px-20 py-20 ">
         <About />
+      </div>
+      <div className="min-h-screen px-20 mb-10">
+        <OurMission/>
+      </div>
+      <div className="min-h-screen px-20 mb-10">
+        <Values/>
       </div>
       <div className="min-h-screen px-20 mb-10">
         <TeamPage />
