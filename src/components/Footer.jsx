@@ -1,11 +1,11 @@
-import { div, footer } from "framer-motion/client";
+import { Link } from "react-router-dom";
 import Logo_unipool from "../assets/Unipool_Logo.png";
 import QR from '../assets/QR_Code.jpeg';
 
 export default function Footer(){
 
     return (
-        <footer className="h-96 px-20 py-10 rounded-t-3xl bg-black text-white">
+        <footer className="px-20 py-10 rounded-t-3xl bg-black text-white">
             <div className="flex  justify-between">
                 <div className="flex gap-10 flex-col">
                     <div className="flex gap-6 items-center">
@@ -17,14 +17,27 @@ export default function Footer(){
                             <p className="text-lg text-white">Lorem ipsum dolor sit amet consectetur</p>
                         </div>
                     </div>
-                    <div className="flex gap-8 items-center px-3">
-                        <p className="text-lg font-light text-yellow-400">Home</p>
-                        <p className="text-lg font-light text-yellow-400">Services</p>
-                        <p className="text-lg font-light text-yellow-400">Contact Us</p>
-                        <p className="text-lg font-light text-yellow-400">About Us</p>
+                    <div className="flex gap-16 items-start px-3">
+                        <div className="flex flex-col gap-2">
+                            <h4 className="text-xl font-medium text-yellow-400">Pages</h4>
+                            <Link to='/' className="text-lg font-light hover:text-yellow-300">Home</Link>
+                            <Link to='/services' className="text-lg font-light hover:text-yellow-300">Services</Link>
+                            <Link to='/contact' className="text-lg font-light hover:text-yellow-300">Contact Us</Link>
+                            <Link to='/about' className="text-lg font-light hover:text-yellow-300">About Us</Link>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <h4 className="text-xl font-medium text-yellow-400">Support</h4>
+                            <Link className="text-lg font-light hover:text-yellow-300">FAQ</Link>
+                            <Link className="text-lg font-light hover:text-yellow-300">Contact Us</Link>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <h4 className="text-xl font-medium text-yellow-400">Company Policy</h4>
+                            <Link className="text-lg font-light hover:text-yellow-300">Terms & Conditions</Link>
+                            <Link className="text-lg font-light hover:text-yellow-300">Refund & Cancellation Policy</Link>
+                        </div>
                     </div>
                 </div>
-                <div className="flex gap-10 items-center justify-center rounded-lg px-4 py-2">
+                <div className="flex gap-10 items-start justify-center rounded-lg px-4 py-2">
                     <div>
                         <img src={QR} className="w-28"/>
                     </div>                    
