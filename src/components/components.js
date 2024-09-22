@@ -7,6 +7,7 @@ import Cards from './Cards';
 import ThirdSection from './ThirdSection';
 import Loader from './Loader';
 import Testimonials from './Testimonials';
+import AppInfo from './AppInfo';
 
 export {
     Navbar,
@@ -17,5 +18,6 @@ export {
     ThirdSection,
     Cards,
     Loader,
-    Testimonials
+    Testimonials,
+    AppInfo
 }

@@ -1,4 +1,4 @@
-import { Navbar, BackgroundBoxesDemo, Footer, HeroSection, FeatureSection, ThirdSection, Testimonials } from '../components/components.js';
+import { HeroSection, FeatureSection, ThirdSection, Testimonials, AppInfo } from '../components/components.js';
 
 
 
@@ -9,6 +9,7 @@ export default function HomePage() {
         <HeroSection/>
         <FeatureSection/>
         <ThirdSection />
+        <AppInfo/>
         <Testimonials/>
       </div> 
     </div>
