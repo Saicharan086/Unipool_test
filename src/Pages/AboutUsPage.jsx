@@ -1,9 +1,15 @@
+import {About, OurMission, TeamPage, Values} from '../components/components';
 
 export default function AboutUsPage(){
 
     return (
-        <div className="flex justify-center items-center px-20 h-96">
-            <h1 className="text-8xl font-semibold">About Us</h1>
+        <div>
+            <div className='px-20'>
+                <About/>
+                <OurMission/>
+                <Values/>
+                <TeamPage />
+            </div>
         </div>
     )
 }
