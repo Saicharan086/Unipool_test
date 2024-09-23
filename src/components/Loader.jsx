@@ -4,13 +4,7 @@ import Unipool_Logo from "../assets/Unipool_Logo.png";
 export default function Loader() {
   return (
     <div className="flex items-center justify-center h-screen flex-col">
-      <video
-        src={Loader_Video}
-        autoPlay
-        loop
-        muted
-        className="w-36"
-      ></video>
+      <video className="w-36" loading="lazy" muted="muted" src="https://cdnl.iconscout.com/lottie/premium/thumb/tuk-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--rickshaw-transport-vehicle-transportation-auto-pack-icons-5561797.mp4" type="video/mp4" autoplay="autoplay" loop="loop" height="100px"></video>
       <div className="flex absolute bottom-24 items-center">
         <div>
           <img src={Unipool_Logo} className="w-16" />
