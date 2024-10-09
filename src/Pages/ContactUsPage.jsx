@@ -1,4 +1,4 @@
-import './lib/App.css'
+import './con_css.css'
 export default function ContactUsPage(){
 
     return (
