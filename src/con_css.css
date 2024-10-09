@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: auto;
+    padding: 0%;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(https://wallpapercave.com/wp/wp4862771.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wb{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnPpnjRSP_WYAUlFdl6jJl-eJby_nZmlGzNw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 99%;
+    height: 100%;
+    margin-top: 0.5%;
+    border-radius: 15px;
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.slide{
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(7px);
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    transition: 2s ease;
+    transform: translateX(-870px);
+    letter-spacing: 1px;
+   }
+   .slide p{
+    font-size: 15px;
+    padding-left: 52px;
+   }
+   ul li{
+    font-size: 25px;
+    font-weight: 700;
+    list-style: none;
+    transition: 0.6s ease-in-out;
+  }
+  ul li:hover{
+    transform: translateX(10px);
+  }
+  .slide ul li:hover{
+    transform: translateX(-20px);
+  }
+  .slide ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: right;
+    padding-top: 55px;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+  nav label input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+  }
+  .toggle{
+    transition: 2s ease-in-out;
+    left: 9%;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    z-index: 101;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  .toggle .topl{
+    top: 30%;
+    left: 50%;
+    background-color: rgb(255, 136, 0);
+    transform: translate(-50%, -50%);
+  }
+  .toggle .midl{
+    top: 50%;
+    left: 50%;
+    background-color: rgb(255, 174, 0);
+    transform: translate(-50%, -50%);
+  }
+  .toggle .botl{
+    top: 70%;
+    left: 50%;
+    background-color: rgb(255, 204, 0);
+    transform: translate(-50%, -50%);
+  }
+  input:hover ~ .toggle .topl{
+    transform:translate(0px,10px);
+  }
+  input:hover ~ .toggle .midl{
+    transform: translate(5px);
+  }
+  input:hover ~ .toggle .botl{
+    transform:translate(0px,-10px);
+  }
+  input:checked ~ .toggle .topl{
+    left: 0px;
+    top: 12px;
+    width: 15px;
+    transform: rotate(45deg);
+  }
+  input:checked ~ .toggle .botl{
+    left: 0px;
+    top: 12px;
+    width: 15px;
+    transform: rotate(-45deg);
+  }
+  input:checked ~ .toggle .midl{
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  input:checked ~ .slide{
+    transform: translateX(0);
+  }
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+   }
+   
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: black;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+
+.context{
+    margin: auto;
+    text-align: center;
+}
+.context .mid{
+    font-size: 60px;
+    font-weight: 500;
+}
+.bot{
+    font-size: 25px;
+}
+
+.au .head{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.form .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+  border-color: #ffc400;
+}
+
+.form .group input:focus+ label, .form .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #ffc400;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form .group textarea {
+  resize: none;
+  height: 100px;
+}
