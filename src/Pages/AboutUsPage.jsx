@@ -4,7 +4,7 @@ export default function AboutUsPage(){
 
     return (
         <div>
-            <div className='px-20'>
+            <div className=''>
                 <About/>
                 <OurMission/>
                 <Values/>
