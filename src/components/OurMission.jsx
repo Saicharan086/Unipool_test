@@ -21,15 +21,15 @@ function OurMission() {
                 </div>
                 <div className="mx-0 md:mx-10 mt-8 md:mt-0">
                     <div className="mb-6">
-                        <div className="text-3xl md:text-5xl font-bold mb-3">44 million</div>
+                        <div className="text-3xl md:text-5xl font-bold mb-3 text-yellow-400">44 million</div>
                         <div className="text-base md:text-xl">Transaction every 24 hours</div>
                     </div>
                     <div className="mb-6">
-                        <div className="text-3xl md:text-5xl font-bold mb-3">$199 million</div>
+                        <div className="text-3xl md:text-5xl font-bold mb-3 text-yellow-400">$199 million</div>
                         <div className="text-base md:text-xl">Assets holding</div>
                     </div>
                     <div>
-                        <div className="text-3xl md:text-5xl font-bold mb-3">46,000</div>
+                        <div className="text-3xl md:text-5xl font-bold mb-3 text-yellow-400">46,000</div>
                         <div className="text-base md:text-xl">New users annually</div>
                     </div>
                 </div>

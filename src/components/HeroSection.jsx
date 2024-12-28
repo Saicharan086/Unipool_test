@@ -5,7 +5,7 @@ import auto_image from "../assets/auto_image.png";
 
 export default function HeroSection() {
     return (
-        <div className="homepage max-md:h-full h-[75vh] flex flex-col md:flex-row gap-10 items-center px-8 md:px-16">
+        <div className="homepage max-md:h-full h-[75vh] flex flex-col md:flex-row gap-10 items-center md:px-0 px-10">
             {/* Left Section: Text and Buttons */}
             <div className="mx-auto w-full md:w-2/3 flex flex-col justify-center text-left">
                 <p className="text-[6vw] md:text-5xl font-semibold flex items-center">
@@ -37,10 +37,10 @@ export default function HeroSection() {
 
                 {/* Download Buttons */}
                 <div className="flex gap-5 mt-6">
-                    <button className="w-[40%] md:w-[12vw]">
+                    <button className="w-[25%] md:w-[12vw]">
                         <img src={play_store} alt="Download on Play Store" className="object-fill max-md:scale-110" />
                     </button>
-                    <button className="w-[50%] md:w-[14vw]">
+                    <button className="w-[31%] md:w-[14vw]">
                         <img src={app_store} alt="Download on App Store" className="object-fill scale-150" />
                     </button>
                 </div>

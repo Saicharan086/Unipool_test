@@ -47,13 +47,13 @@ export default function Footer() {
                 </div>
             </div>
             <hr className="my-9 border border-gray-600" />
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row md:items-center justify-between ">
                 <div>
                     <p className="text-white/80">© Copyright 2024. All rights reserved.</p>
                 </div>
-                <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0">
+                <div className="flex flex-col md:flex-row items-center mt-4 md:mt-0 max-md:gap-3 max-md:items-start">
                     <input className="w-full md:w-60 px-3 py-2 rounded-lg mx-2 outline-none" type="text" placeholder="Email Address" />
-                    <button className="bg-yellow-500 rounded-md p-2 mx-2 text-black font-medium">Subscribe</button>
+                    <button className="bg-yellow-500 w-full rounded-md p-2 mx-2 text-black font-medium">Subscribe</button>
                 </div>
             </div>
         </footer>

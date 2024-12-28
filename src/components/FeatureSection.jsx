@@ -38,14 +38,14 @@ export default function FeatureSection() {
         <div className="featurepage flex flex-col gap-10 py-10 px-5 md:px-10">
             <div className="text-center mx-auto py-10 px-4 md:px-0">
                 <h2 className="text-4xl md:text-5xl font-semibold mb-4">Every Feature You Need to Ride Better</h2>
-                <p className="w-full md:w-3/5 lg:w-1/2 mx-auto text-lg md:text-xl text-gray-700 leading-relaxed">
+                <p className="mx-auto text-lg md:text-xl text-gray-700 leading-relaxed">
                     At UNIPOOL, we believe in making every journey a little brighter. Our platform is designed for smart
                     commuters who value convenience, savings, and sustainability. Join the community that's transforming
                     the way the world moves.
                 </p>
             </div>
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row gap-10">
                 <div className="w-full md:w-1/2 flex justify-center items-center mb-5 md:mb-0">
                     <div className="h-[300px] md:h-[80%] flex items-center">
                         <img src={images[index]} className="h-full object-contain" alt={`Feature illustration ${index + 1}`} />
