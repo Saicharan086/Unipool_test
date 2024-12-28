@@ -62,9 +62,9 @@ const StickyScroll = ({
         </div>
       </div>
       <div
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "yellow" }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-black sticky top-10 overflow-hidden",
+          "hidden lg:block h-60 w-80 rounded-md bg-yellow-300 sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
